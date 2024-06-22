@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortae", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(0, 22, 146, 0.8);
+
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    background: linear-gradient(to left, transparent, black, black, black, transparent);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 255, 0.6);
+    text-shadow: 0 0 25px rgba(0, 0, 255, 0.6);
+    color: rgba(0, 0, 255, 0.6);
+}
+
+.out{
+    margin-top: 5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.356);
+    border-radius: 50px;
+}
+
+.in{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.in h1{
+    padding: 0.5rem;
+    border-top:5px solid black;
+    border-right:5px solid black;
+    border-top-right-radius: 0.5rem;
+}
+
+.yeager{
+    color: black;
+}
+
+h6{
+    color: black;
+}
+
+img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 1px black;
+}
+
+.in-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.in-div h3{
+    color: black;
+}
+
+.div-list{
+    width: 80%;
+    margin-left: 1rem;
+}
+
+
+li{
+    list-style-type: circle;
+    padding: 0.5rem;
+}
+
+.text-btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.text-btn h2{
+    color: black;
+}
+
+.text-btn a{
+    color: rgba(255, 0, 0, 0.781);
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 1000;
+    border: 3px solid rgba(255, 0, 0, 0.781);
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.356)
+}
+
+.text-btn a:hover{
+    background-color:  rgba(218, 46, 3, 0.9);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 1rem 0;
+    border-radius: 5px;
+}

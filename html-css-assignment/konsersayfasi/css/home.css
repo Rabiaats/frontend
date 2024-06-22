@@ -1,0 +1,230 @@
+/* resmin üzerindeki yazı*/
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gwendolyn:wght@400;700&display=swap');
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gwendolyn:wght@400;700&family=Jersey+15&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family:"regista";
+    src:url("./Regista.ttf")
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/ilk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid black;
+}
+
+
+body:hover{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/son.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+nav{
+    padding: 1rem 0;
+}
+
+
+.menu{
+    color: white;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 30px;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: -1.8rem;
+    list-style-type: none;
+    visibility: hidden;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: "Jersey";
+    font-size: 20px;
+    text-shadow: 0 0 2px  rgba(80, 3, 90, 1);
+}
+
+.menu:hover + .nav{
+    visibility: visible;
+}
+
+.nav:hover{
+    visibility: visible;
+}
+
+.nav li{
+    margin-left: 4rem;
+}
+
+
+main{
+    width: 100%;
+    height: calc(100vh - 78px);
+    color: white;
+    position: relative;
+}
+
+
+.section-text{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 10vh;
+    color: whitesmoke;
+}
+
+
+.section-text-title{
+    display: inline-block;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vh;
+    letter-spacing: 8px;
+    border-bottom: 2.5px solid  rgba(80, 3, 90, 1);
+    padding: 1rem 2rem;
+    margin: 2rem 10rem;
+    text-shadow: -3px 1px 1px black;
+    font-variant: small-caps;
+}
+
+
+.section-text-1{
+    margin: 2rem 3rem;
+    font-family: "Dancing", cursive;
+    font-size: 2.5vh;
+    text-shadow: 1px 1px 2px black, 
+               0 0 25px  rgb(80, 3, 90), 
+               0 0 10px  rgb(54, 1, 61);
+}
+
+
+
+.section-text-2{
+    margin: 3rem 9rem;
+    color:  rgb(165, 79, 177);
+    font-size: 15px;
+    text-shadow: 0 4px 10px  rgb(80, 3, 90);
+}
+
+
+
+.section-text-readmore{
+    margin-top: 2rem;
+    margin-left: 12rem;
+}
+
+
+
+.section-text-readmore a{
+    color: whitesmoke;
+    text-decoration: none;
+    background-color:  rgba(80, 3, 90, 1);
+    padding: 1vh 2vh;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+.section-text-readmore:hover{
+    transform: translateY(-5px);
+}
+
+
+
+.section-text-readmore a:hover{
+    border: 3px solid white;
+    box-shadow: 0px 0px 20px 10px rgba(80, 3, 90, 0.3);
+}
+
+
+.section-icons{
+    box-shadow: 0 0 100px 10px  rgba(80, 3, 90, 0.3);
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    height: 15vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(80, 3, 90, 0.15);
+}
+
+
+
+.section-icons-div{
+    text-align: center;
+    width: 400px;
+}
+
+
+.section-icons-div i{
+    margin: 1rem 0;
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+
+
+#music{
+    background-color: rgb(167, 24, 24);
+}
+
+#user{
+    background-color: rgb(25, 210, 210);
+}
+
+#video{
+    background-color: rgb(161, 92, 7);
+}
+
+
+footer{
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    color: whitesmoke;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons{
+    margin-left: 3rem;
+}
+
+.footer-icons i{
+    color: white;
+    font-size: 2rem;
+}
+
+.footer-icons i:hover{
+    color:  rgba(170, 67, 184, 0.664);   
+}

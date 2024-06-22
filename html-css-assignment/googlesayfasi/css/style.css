@@ -1,0 +1,245 @@
+/* 
+<i class="fa-solid fa-microphone"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+
+footer renk #F2F2F2
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 2rem;
+}
+
+.header-nav-left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* header{
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+header nav.header-nav-left{
+    float: left;
+    margin-top: 10px;
+}
+
+
+header nav.header-nav-right{
+    float: right;
+    padding-top: 8px;
+}
+
+header a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-right: 2rem;
+}
+
+.header-relative{
+    position: relative;
+    top: -10px;
+    
+}
+
+header button{
+    color: white;
+    padding: 7px;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+header img{
+    display: inline-block;
+}
+
+.header-a-img:hover{
+    border: none;
+}
+
+header::after{
+    content: "";
+    clear: both;
+    display: block;
+} */
+
+main{
+    width: 100%;
+    height: 82vh;
+    padding-top: 173px;
+}
+
+.main-div{
+    text-align: center;
+    width: 550px;
+    margin: auto;
+}
+
+.googlelogo{
+    height: 95px;
+    width: 272px;
+    margin-bottom: 1.5rem;
+}
+
+.main-relative{
+    position: relative;
+}
+
+input{
+    font-size: 16px;
+    height: 50px;
+    width: 520px;
+    border-radius: 25px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    padding-left: 60px;
+}
+input:hover{
+    cursor: text;
+    box-shadow: 2px 2px 3px 0.5px rgba(128, 128, 128, 0.315);
+}
+
+.input-img-search{
+    position: absolute;
+    width: 32px;
+    left: 25px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.input-img-microphone{
+    position: absolute;
+    width: 18px;
+    top: 10px;
+    right: 30px;
+}
+
+/* input::before {
+    content:'';
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+    left:10px;
+    background-image: url(../img/magnifying_glass.jpg);
+}
+input::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    right:10px;
+    background-image: url(../img/google_microphone.png);
+} */
+
+.main-button{
+    margin: 2rem;
+}
+
+main button{
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    color: gray;
+    border-radius: 5px;
+}
+
+main button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px 0.5px rgba(128, 128, 128, 0.315);
+}
+
+footer{
+    background-color: #F2F2F2;
+    padding: 20px;
+    color: gray;
+    height: 18vh;
+}
+
+.footer-top{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddcdc;
+}
+
+.footer-top p:hover{
+    cursor: text;
+}
+
+.footer-nav-left ul{
+    float: left;
+    padding: 10px 0;
+}
+
+.footer-nav-left ul li{
+    display: inline-block;
+    margin-right: 15px;
+    list-style-type: none;
+}
+
+footer a{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid gray;
+}
+
+.footer-nav-right ul{
+    float: right;
+    padding: 10px 0;
+}
+
+.footer-nav-right ul li{
+    display: inline-block;
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.footer-nav-right ul li a{
+    text-decoration: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home" id="home">
+        <header>
+          <div class="header-title">
+            <h1>RABIA ATES</h1>
+          </div>
+        </header>
+        <div class="btn">
+          <button onclick="location.href='#home'">Home</button>
+          <button onclick="location.href='#about'">About</button>
+          <button onclick="location.href='#projects'">Photos</button>
+          <button onclick="location.href='#contact'">Contact</button>
+        </div>
+        <main class="about" id="about">
+          <h1>
+            Hi there &#128075; I am Rabia Ates. I have a great passion for photography..
+          </h1>
+        </main>
+        <main class="projects" id="projects">
+          <h1 class="projects-title">My Photos</h1>
+          <div class="projects-img">
+            <img src="./img/IMG_1976.jpg" alt="" />
+            <img src="./img/IMG_2206 (1).jpg" alt="" />
+            <img src="./img/IMG_2769.JPG" alt="" />
+            <img src="./img/IMG_2810.JPG" alt="" />
+            <img src="./img/IMG_4712.JPG" alt="" />
+          </div>
+        </main>
+        <main class="contact" id="contact">
+          <h1>Contact Me</h1>
+          <div class="contact-icons">
+            <a href="https://github.com/" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+              <p>Instagram</p>
+            </a>
+            <a href="https://x.com/home" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+              <p>Twitter</p>
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>Linkedin</p>
+            </a>
+          </div>
+          <form action="" class="contact-form">
+            <h2>Send Message</h2>
+            <input type="text" name="input-username" placeholder="Username" />
+            <input type="email" name="input-email" placeholder="Email" />
+            <textarea
+              name="input-message"
+              placeholder="Your message"
+            ></textarea>
+            <button class="btn-send">SEND</button>
+            <!-- <input type="submit" value="SEND" /> <i class="fa-regular fa-envelope"></i> -->
+          </form>
+        </main>
+      </div>
+      <button class="btn-top" onclick="location.href='#home'">
+        Top <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </body>
+</html>

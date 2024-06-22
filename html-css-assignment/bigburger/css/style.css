@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-logo{
+    background: linear-gradient(to right,rgba(7, 7, 7, 1),rgba(255, 20, 20, 1));
+}
+.logo{
+    width: 70px;
+    margin-left: 5px;
+}
+
+/* linklerin olduğu başlık kısmı */
+nav{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.list-link{
+    /* li leri nav a ortalamak icin ul a width verdik ki kendi alanında ortalansın*/
+    width: 500px;
+    margin: auto;
+}
+
+li{
+    display: inline; /*! yanyana gelmeleri icin li leri inline yaptık*/
+    margin: 0 15px;
+    letter-spacing: 1.5px;
+}
+
+.backround{
+    /* hamburgerli backround ı ayarladık */
+    width: 100%;
+    height: calc(100vh - 133px);
+    background: linear-gradient(to right,rgba(26, 24, 24, 0),rgba(190, 20, 20, 0.7)) ,url(../img/fast-food.jpg) no-repeat center center /cover;
+    background-position: right 100% top 85%;
+    position: relative; /*yazıyı konumlardırmak için*/
+}
+
+.div-text{
+    /* yazı divimizi konumlandırdık */
+    position: absolute;
+    width: 700px;
+    letter-spacing: 5px;
+    /*TODO yazının başına göre ortalar , yazının kalınlığıda etkiliyor*/
+    top: 300px;
+    left: 50%;
+    transform: translate(-35%, -70%);
+}
+
+h1{
+    font-size: 76px;
+    /* yazıya gradient verdik gold rengi soluklaştı */
+    background: linear-gradient(to right, rgb(252, 185, 1), rgba(255, 255, 255, 0));
+    background-position: right 160px top 40%;
+    background-clip: text;
+    color: transparent;
+}

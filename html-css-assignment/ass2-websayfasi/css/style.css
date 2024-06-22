@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "M Plus Code Latin", sans-serif;
+    padding: 3rem 0 2rem 0;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: wheat;
+    gap: 1rem;
+}
+
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+header{
+    font-size: 2.8rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title{
+    font-family: "Londrina Shadow";
+}
+
+.btn{
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    top: 1vh;
+    display: flex;
+}
+
+.btn button{
+    padding: 1rem 2rem;
+    border: none;
+    /* outline: 2px solid rgb(253, 171, 70); */
+    background: linear-gradient(to bottom, wheat, transparent, wheat);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.btn button:hover{
+    background: linear-gradient(to bottom, transparent, wheat, transparent);
+    color: black;
+}
+
+.about{
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    padding: 10rem 4rem;
+}
+
+.about h1{
+    font-size: 2.5rem;
+    line-height: 4rem;
+    word-spacing: 1rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.prpjects-title{
+    border-bottom: 2px solid wheat;
+    width: 11rem;
+}
+
+.projects-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem 0.5rem;
+}
+
+.projects-img img{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 0 10px 0.1px rgba(252, 251, 251, 0.288);
+}
+
+.projects-img img:hover{
+    opacity: 0.7;
+    box-shadow: 0 0 10px 0.1px greenyellow;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-icons p{
+    display: inline;
+}
+
+.contact-icons a{
+    font-size: 1rem;
+    color: rgba(255, 166, 0, 0.514);
+    text-decoration: none;
+}
+
+.contact-icons a:hover{
+    color: white;
+}
+
+.contact-icons a:hover p{
+    border-bottom: 1px solid white;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.contact-form input{
+    outline: none;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid rgba(255, 166, 0, 0.925);
+}
+
+input:focus{
+    border: 2px solid red;
+    background-color: wheat;
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-form textarea{
+    outline: none;
+    height: 100px;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid rgba(255, 166, 0, 0.925);
+}
+
+.contact-form textarea:focus{
+    border: 2px solid red;
+    background-color: wheat;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-send{
+    outline: none;
+    border: none;
+    background-color: rgba(255, 166, 0, 0.925);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    background-color: rgba(255, 0, 0, 0.658);
+    color: wheat;
+    border-color: red;
+    font-size: 1.5rem;
+}
+
+.btn-send:hover::after{
+    content: "  🖅";
+}
+
+/* .contact-form input[value="SEND"]{
+    background-color: rgba(255, 166, 0, 0.925);
+    font-size: 1.2rem;
+}
+
+.contact-form input[value="SEND"]:hover{
+    background-color: rgba(255, 0, 0, 0.658);
+    color: wheat;
+    border-color: red;
+    transform: scale(1.02);
+    font-size: 1.5rem;
+}
+
+.contact-form input[value="SEND"]:hover + i{
+    font-size: 1.5rem;
+    color: wheat;
+    opacity: 1;
+}
+
+.fa-regular{
+    position: absolute;
+    bottom: 2.5vh;
+    right: 30%;
+    font-size: 1.8rem;
+    opacity: 0;
+} */
+
+.btn-top{
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 166, 0, 0.925);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-top:hover{
+    border: 2px solid red;
+    background-color: red;
+    color: wheat;
+}
+
+
+/*
+button
+font-family: "Font Awesome 5 Free";
+content: "\f054"
+   content: "🖅";
+
+*/

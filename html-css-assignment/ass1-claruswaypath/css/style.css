@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background: radial-gradient(circle at bottom right, transparent, purple, purple, transparent);
+}
+
+.out{
+    margin-left: 4vh;
+    padding: 2vh 10vw;
+}
+
+.in{
+    width: 90%;
+    border-radius: 20px;
+    margin: 2vh;
+    padding: 1.5vh;
+    background-color: rgba(255, 0, 0, 0.37);
+    box-shadow: inset 0px 0px 50px 50px rgba(233, 230, 233, 0.3);
+    box-shadow: outset 0px 0px 50px 50px rgba(233, 230, 233, 0.3); 
+    color: white;
+}
+
+.in:hover{
+    box-shadow:-1px -1px 100px 50px rgba(255, 255, 255, 0.3); 
+}
+
+.in::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+h1{
+    padding-top: 3vh;
+    font-size: 12.5vh;
+    text-align: center;
+    letter-spacing: -5px;
+    line-height: 90px;
+    word-spacing: -40px;
+    font-variant: small-caps;
+    font-family: "Lucida Console", Courier, monospace;
+    background: linear-gradient(to left, red, rgb(206, 17, 206), rgb(206, 17, 206), red);
+    background-position: left 500px top 70px;
+    background-clip: text;
+    color: transparent;
+}
+
+img{
+    width: 20vw;
+    height: 23vh;
+    float: left;
+    margin-right: 10px;
+    transition: all 2s;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 10 ease;
+    box-shadow: 0px 0px 90px 0.5px black;
+    border-radius: 20px;
+    width: 25vw;
+    height: 25vh;
+}
+
+h3{
+    font-size: 3vh;
+    color: rgb(92, 2, 92);
+}
+
+p{
+    text-indent: 10px; /*Paragraf Girdisi Yapmak*/
+    text-align: justify;
+}
+
+a{
+    float: right;
+    background-color: white;
+    color: rgb(124, 4, 124);
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
+a:hover{
+    transform: scale(1.2);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
