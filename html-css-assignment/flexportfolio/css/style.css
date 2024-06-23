@@ -261,6 +261,7 @@ footer{
     flex-direction: column;
     align-items: center;
     transition: all 0.8s ease-in-out;
+    flex-grow: 1;
 }
 
 .card-skills{
