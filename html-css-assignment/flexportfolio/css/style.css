@@ -1,0 +1,401 @@
+/* TODO font-family
+ harvey Orbitron
+ h1, h2, btn Comfortaa
+ p, IBM Plex Mono
+*/
+
+/* ? color
+ * header 
+ #CF0607
+ background #212A34
+
+ *home skills
+ background #212A34
+
+ *about projects
+ background #353F4E
+
+ ? h1, p -> white
+ ? btn-cv text -> transparent
+ ? h1-red = red
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Neucha", cursive;
+    font-weight: normal;
+    text-decoration: none;
+
+/*     
+    color: #212A34;
+    color: #353F4E;
+    color: #D80404; 
+    
+    background-color: #5a7249;
+    background-color: #293421; */
+}
+
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #5a7249;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 65%;
+    padding: 1rem 2rem;
+}
+
+.fullname{
+    font-family: "Nanum Pen Script", sans-serif;
+    font-weight: bold;
+    color: #ffc400;
+    padding: 0.5rem 0;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-right a{
+    color: white;
+    padding: 0.5rem;
+}
+/* !
+.nav-right a:paused{
+    color: red;
+} */
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container > section{
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    padding: 15vh 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+#home, #about{
+    padding: 25vh 5%;
+}
+
+#skills, #projects{
+    flex-direction: column;
+}
+
+#home, #skills{
+    background-color: #5a7249;
+}
+
+#about, #projects, footer{
+    background-color: #293421;
+}
+
+.home-text, .about-text{
+    text-align: justify;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home-text{
+    height: 720px;
+}
+
+.title h1{
+    font-size: 4rem;
+}
+
+.title h2{
+    font-size: 2rem;
+}
+
+.title h3{
+    font-size: 1.8rem;
+}
+
+p{
+    line-height: 2.5rem;
+    font-size: 2rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 100;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+
+.social-icons i{
+    color: #ffc400;
+}
+
+.fa-linkedin{
+    border-radius: 5px;
+}
+
+.fa-whatsapp{
+    
+    padding: 0 0.01rem;
+}
+
+.fa-github, .fa-facebook, .fa-whatsapp{
+    border-radius: 50px;
+}
+
+.social-icons i:hover{
+    color: #5a7249;
+    background: radial-gradient(circle, #ffc400, #ffc400, transparent);
+    box-shadow: 0 0 40px 1px #ffc400;
+}
+
+.btn-cv{
+    width: 300px;
+    color: #5a7249;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.7rem;
+    background-color: #ffc400;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px 3px #ffc400;
+    margin-left: 0.2rem;
+}
+
+#home img, #about img{
+    width: 320px;
+    background-color: #ffc400;
+}
+
+#about span{
+    color: #ffc400;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+}
+
+.img-png{
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 10%;
+    animation-name: apsis-axis;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes apsis-axis{
+    0%{
+        transform: translateX(-2rem);
+    }
+
+    50%{
+        transform: translateX(2rem);
+    }
+
+    100%{
+        transform: translateX(-2rem);
+    }
+}
+
+#skills h1{
+    font-size: 2.5rem;
+}
+
+#skills h1 span{
+    color: #ffc400;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.card-skills, .card-projects{
+    background-color: #293421;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-skills{
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    width: 350px;
+    height: 400px;
+}
+
+.card-projects{
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+
+.card-skills:hover{
+    transform: scale(1.02);
+    outline: 2px solid #ffc400;
+    box-shadow: 0 0 20px 5px #ffc400;
+    transition: transform, border, box-shadow, 1s ease-in-out;
+}
+
+.card-skills .icon-h1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.card-skills .icon-h1 i{
+    font-size: 3rem;
+    color: #ffc400;
+}
+
+.card-skills .icon-h1 h1{
+    text-align: center;
+}
+
+.card-skills p{
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace; 
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: normal;
+}
+
+#projects h1{
+    font-size: 2.5rem;
+}
+
+#projects h1 span{
+    color: #ffc400;
+}
+
+/* .card-projects h2 a{
+    color: #ffc400;
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+    font-size: 1.8rem;
+}
+
+.card-projects:hover h2{
+    transform: translateY(-101%);
+    transition: transform 1s ease-in-out;
+} */
+
+.card-projects{
+    border-radius: 20px;
+    position: relative;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.card-projects .front{
+    transform: rotateY(0deg);
+    transition: all 1s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card-projects .front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+
+.card-projects .back{
+    background-color: #ffc400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(-180deg);
+    transition: all 1s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card-projects .back a{
+    color: #5a7249;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-projects:hover .front{
+    transform: rotateY(180deg);
+}
+
+.card-projects:hover .back{
+    transform: rotateY(0deg);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1vh 10%;
+    gap: 1rem;
+}
+
+footer p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer button{
+    padding: 0.5rem;
+    background-color: #ffc400;
+    box-shadow: 0 0 5px 1px #ffc400;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+footer button i{
+    color: #353F4E;
+    font-size: 1.5rem;
+}
+
+
