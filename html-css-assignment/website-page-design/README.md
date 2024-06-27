@@ -26,14 +26,6 @@ Project aims to create a website page.
         |----images (folder)
 ```
 
-## Expected Outcome
-
-![Project Snapshot](Project_1.png)
-
-![Project Snapshot](Project_2.png)
-
-![Project Snapshot](Project_3.png)
-
 ## Objective
 
 Build a Landing same as in the example images.
@@ -77,10 +69,6 @@ Build a Landing same as in the example images.
 ## Notes
 
 - You can use HTML,and CSS to complete this project.
-
-## Resources
-
--  [Images](./img)
 
 
 <p align='center'> <strong>⌛ Happy Coding  ✍ </strong></p>
