@@ -104,12 +104,12 @@ form .bottom{
 
 @keyframes bicycle-girl{
     100%{
-        transform: translateX(-2000px);
+        transform: translateX(-3000px);
     }
 }
 
 @keyframes leaf-fall{
     100%{
-        transform: translateY(1000px);
+        transform: translateY(2000px);
     }
 }
