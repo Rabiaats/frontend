@@ -27,7 +27,7 @@ body{
     width: 200px;
     bottom: 28%;
     right: -100px;
-    animation: bicycle-girl 5s linear normal infinite;
+    animation: bicycle-girl 10s linear normal infinite;
 }
 
 .bicycle img{
@@ -52,7 +52,7 @@ body{
     top: 0;
     display: flex;
     gap: 20rem;
-    animation: leaf-fall 5s linear infinite;
+    animation: leaf-fall 10s linear infinite;
 }
 
 .container{
